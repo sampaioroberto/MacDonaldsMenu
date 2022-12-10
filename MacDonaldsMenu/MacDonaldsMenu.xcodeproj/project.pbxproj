@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48C61E88DBBB3455DB4A3D86 /* Pods_MacDonaldsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5623112990EE73C680AB65 /* Pods_MacDonaldsMenu.framework */; };
 		D36CEC3929451BD600CE26BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3829451BD600CE26BB /* AppDelegate.swift */; };
 		D36CEC3B29451BD600CE26BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3A29451BD600CE26BB /* SceneDelegate.swift */; };
 		D36CEC3D29451BD600CE26BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3C29451BD600CE26BB /* ViewController.swift */; };
@@ -14,8 +15,7 @@
 		D36CEC4229451BD800CE26BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CEC4129451BD800CE26BB /* Assets.xcassets */; };
 		D36CEC4529451BD800CE26BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36CEC4329451BD800CE26BB /* LaunchScreen.storyboard */; };
 		D36CEC5029451BD800CE26BB /* MacDonaldsMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC4F29451BD800CE26BB /* MacDonaldsMenuTests.swift */; };
-		D36CEC5A29451BD800CE26BB /* MacDonaldsMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC5929451BD800CE26BB /* MacDonaldsMenuUITests.swift */; };
-		D36CEC5C29451BD800CE26BB /* MacDonaldsMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC5B29451BD800CE26BB /* MacDonaldsMenuUITestsLaunchTests.swift */; };
+		F9E1241F4E9055808D4028C7 /* Pods_MacDonaldsMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D26EA47473A095E3BA88F5 /* Pods_MacDonaldsMenuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +26,15 @@
 			remoteGlobalIDString = D36CEC3429451BD500CE26BB;
 			remoteInfo = MacDonaldsMenu;
 		};
-		D36CEC5629451BD800CE26BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D36CEC2D29451BD500CE26BB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D36CEC3429451BD500CE26BB;
-			remoteInfo = MacDonaldsMenu;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5623112990EE73C680AB65 /* Pods_MacDonaldsMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacDonaldsMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4FB82375870B971BB2A81B /* Pods-MacDonaldsMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacDonaldsMenu.release.xcconfig"; path = "Target Support Files/Pods-MacDonaldsMenu/Pods-MacDonaldsMenu.release.xcconfig"; sourceTree = "<group>"; };
+		45D26EA47473A095E3BA88F5 /* Pods_MacDonaldsMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacDonaldsMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AA34347FD280A4537C6804 /* Pods-MacDonaldsMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacDonaldsMenu.debug.xcconfig"; path = "Target Support Files/Pods-MacDonaldsMenu/Pods-MacDonaldsMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		87A18B8709847C28518B7AA2 /* Pods-MacDonaldsMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacDonaldsMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-MacDonaldsMenuTests/Pods-MacDonaldsMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C8E5CFF7E19DB82D20511F3 /* Pods-MacDonaldsMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacDonaldsMenuTests.release.xcconfig"; path = "Target Support Files/Pods-MacDonaldsMenuTests/Pods-MacDonaldsMenuTests.release.xcconfig"; sourceTree = "<group>"; };
 		D36CEC3529451BD600CE26BB /* MacDonaldsMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacDonaldsMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36CEC3829451BD600CE26BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D36CEC3A29451BD600CE26BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +45,6 @@
 		D36CEC4629451BD800CE26BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D36CEC4B29451BD800CE26BB /* MacDonaldsMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacDonaldsMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36CEC4F29451BD800CE26BB /* MacDonaldsMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDonaldsMenuTests.swift; sourceTree = "<group>"; };
-		D36CEC5529451BD800CE26BB /* MacDonaldsMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacDonaldsMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D36CEC5929451BD800CE26BB /* MacDonaldsMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDonaldsMenuUITests.swift; sourceTree = "<group>"; };
-		D36CEC5B29451BD800CE26BB /* MacDonaldsMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDonaldsMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C61E88DBBB3455DB4A3D86 /* Pods_MacDonaldsMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +60,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D36CEC5229451BD800CE26BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F9E1241F4E9055808D4028C7 /* Pods_MacDonaldsMenuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1F50EDC9C7B7FBE2EAB95FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F5623112990EE73C680AB65 /* Pods_MacDonaldsMenu.framework */,
+				45D26EA47473A095E3BA88F5 /* Pods_MacDonaldsMenuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC58257E536C4A045B7A7DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65AA34347FD280A4537C6804 /* Pods-MacDonaldsMenu.debug.xcconfig */,
+				2D4FB82375870B971BB2A81B /* Pods-MacDonaldsMenu.release.xcconfig */,
+				87A18B8709847C28518B7AA2 /* Pods-MacDonaldsMenuTests.debug.xcconfig */,
+				9C8E5CFF7E19DB82D20511F3 /* Pods-MacDonaldsMenuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D36CEC2C29451BD500CE26BB = {
 			isa = PBXGroup;
 			children = (
 				D36CEC3729451BD600CE26BB /* MacDonaldsMenu */,
 				D36CEC4E29451BD800CE26BB /* MacDonaldsMenuTests */,
-				D36CEC5829451BD800CE26BB /* MacDonaldsMenuUITests */,
 				D36CEC3629451BD600CE26BB /* Products */,
+				CC58257E536C4A045B7A7DB1 /* Pods */,
+				B1F50EDC9C7B7FBE2EAB95FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +103,6 @@
 			children = (
 				D36CEC3529451BD600CE26BB /* MacDonaldsMenu.app */,
 				D36CEC4B29451BD800CE26BB /* MacDonaldsMenuTests.xctest */,
-				D36CEC5529451BD800CE26BB /* MacDonaldsMenuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +129,6 @@
 			path = MacDonaldsMenuTests;
 			sourceTree = "<group>";
 		};
-		D36CEC5829451BD800CE26BB /* MacDonaldsMenuUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D36CEC5929451BD800CE26BB /* MacDonaldsMenuUITests.swift */,
-				D36CEC5B29451BD800CE26BB /* MacDonaldsMenuUITestsLaunchTests.swift */,
-			);
-			path = MacDonaldsMenuUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36CEC5F29451BD800CE26BB /* Build configuration list for PBXNativeTarget "MacDonaldsMenu" */;
 			buildPhases = (
+				863890803369E7AD7C5A0B5F /* [CP] Check Pods Manifest.lock */,
 				D36CEC3129451BD500CE26BB /* Sources */,
 				D36CEC3229451BD500CE26BB /* Frameworks */,
 				D36CEC3329451BD500CE26BB /* Resources */,
+				D36CEC6829451E2300CE26BB /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -151,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36CEC6229451BD800CE26BB /* Build configuration list for PBXNativeTarget "MacDonaldsMenuTests" */;
 			buildPhases = (
+				E2DBB9D629DD8B6FE7AF9DA6 /* [CP] Check Pods Manifest.lock */,
 				D36CEC4729451BD800CE26BB /* Sources */,
 				D36CEC4829451BD800CE26BB /* Frameworks */,
 				D36CEC4929451BD800CE26BB /* Resources */,
@@ -164,24 +169,6 @@
 			productName = MacDonaldsMenuTests;
 			productReference = D36CEC4B29451BD800CE26BB /* MacDonaldsMenuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D36CEC5429451BD800CE26BB /* MacDonaldsMenuUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D36CEC6529451BD800CE26BB /* Build configuration list for PBXNativeTarget "MacDonaldsMenuUITests" */;
-			buildPhases = (
-				D36CEC5129451BD800CE26BB /* Sources */,
-				D36CEC5229451BD800CE26BB /* Frameworks */,
-				D36CEC5329451BD800CE26BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D36CEC5729451BD800CE26BB /* PBXTargetDependency */,
-			);
-			name = MacDonaldsMenuUITests;
-			productName = MacDonaldsMenuUITests;
-			productReference = D36CEC5529451BD800CE26BB /* MacDonaldsMenuUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +184,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					D36CEC4A29451BD800CE26BB = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = D36CEC3429451BD500CE26BB;
-					};
-					D36CEC5429451BD800CE26BB = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = D36CEC3429451BD500CE26BB;
 					};
@@ -221,7 +204,6 @@
 			targets = (
 				D36CEC3429451BD500CE26BB /* MacDonaldsMenu */,
 				D36CEC4A29451BD800CE26BB /* MacDonaldsMenuTests */,
-				D36CEC5429451BD800CE26BB /* MacDonaldsMenuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,14 +226,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D36CEC5329451BD800CE26BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		863890803369E7AD7C5A0B5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacDonaldsMenu-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		D36CEC6829451E2300CE26BB /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E2DBB9D629DD8B6FE7AF9DA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacDonaldsMenuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D36CEC3129451BD500CE26BB /* Sources */ = {
@@ -272,15 +313,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D36CEC5129451BD800CE26BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D36CEC5A29451BD800CE26BB /* MacDonaldsMenuUITests.swift in Sources */,
-				D36CEC5C29451BD800CE26BB /* MacDonaldsMenuUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +320,6 @@
 			isa = PBXTargetDependency;
 			target = D36CEC3429451BD500CE26BB /* MacDonaldsMenu */;
 			targetProxy = D36CEC4C29451BD800CE26BB /* PBXContainerItemProxy */;
-		};
-		D36CEC5729451BD800CE26BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D36CEC3429451BD500CE26BB /* MacDonaldsMenu */;
-			targetProxy = D36CEC5629451BD800CE26BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,6 +459,7 @@
 		};
 		D36CEC6029451BD800CE26BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AA34347FD280A4537C6804 /* Pods-MacDonaldsMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +487,7 @@
 		};
 		D36CEC6129451BD800CE26BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4FB82375870B971BB2A81B /* Pods-MacDonaldsMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +515,7 @@
 		};
 		D36CEC6329451BD800CE26BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A18B8709847C28518B7AA2 /* Pods-MacDonaldsMenuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +535,7 @@
 		};
 		D36CEC6429451BD800CE26BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8E5CFF7E19DB82D20511F3 /* Pods-MacDonaldsMenuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,40 +550,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacDonaldsMenu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacDonaldsMenu";
-			};
-			name = Release;
-		};
-		D36CEC6629451BD800CE26BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.sampaio.MacDonaldsMenuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MacDonaldsMenu;
-			};
-			name = Debug;
-		};
-		D36CEC6729451BD800CE26BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.sampaio.MacDonaldsMenuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MacDonaldsMenu;
 			};
 			name = Release;
 		};
@@ -582,15 +579,6 @@
 			buildConfigurations = (
 				D36CEC6329451BD800CE26BB /* Debug */,
 				D36CEC6429451BD800CE26BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D36CEC6529451BD800CE26BB /* Build configuration list for PBXNativeTarget "MacDonaldsMenuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D36CEC6629451BD800CE26BB /* Debug */,
-				D36CEC6729451BD800CE26BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

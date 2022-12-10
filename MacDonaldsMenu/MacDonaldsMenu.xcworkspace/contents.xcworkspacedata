@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UI">
+   </FileRef>
+   <FileRef
       location = "group:MacDonaldsMenu.xcodeproj">
    </FileRef>
    <FileRef

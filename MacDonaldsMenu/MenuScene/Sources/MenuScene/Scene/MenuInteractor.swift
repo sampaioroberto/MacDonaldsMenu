@@ -16,6 +16,7 @@ final class MenuInteractor {
 
 extension MenuInteractor: MenuInteracting {
     func fetchMenu() {
+        presenter.presentLoading()
         service.fetchMenu { [weak self] response in
             switch response {
             case let .success(menu):
@@ -23,7 +24,7 @@ extension MenuInteractor: MenuInteracting {
                     self?.presenter.presentError(type: .empty)
                     return
                 }
-                self?.presenter.presentMenu(menu: menu)
+                self?.presenter.presentMenu(menu)
             case .failure:
                 self?.presenter.presentError(type: .unexpected)
             }

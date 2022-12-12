@@ -1,3 +1,3 @@
-struct Menu: Decodable {
+struct Menu: Decodable, Equatable {
     let menus: [ItemList]
 }

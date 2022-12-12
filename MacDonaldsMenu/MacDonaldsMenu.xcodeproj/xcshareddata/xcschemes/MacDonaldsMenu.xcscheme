@@ -101,6 +101,16 @@
                ReferencedContainer = "container:UI">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MenuSceneTests"
+               BuildableName = "MenuSceneTests"
+               BlueprintName = "MenuSceneTests"
+               ReferencedContainer = "container:MenuScene">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

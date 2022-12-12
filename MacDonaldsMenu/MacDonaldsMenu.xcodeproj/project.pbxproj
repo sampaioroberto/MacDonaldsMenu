@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		48C61E88DBBB3455DB4A3D86 /* Pods_MacDonaldsMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5623112990EE73C680AB65 /* Pods_MacDonaldsMenu.framework */; };
+		D35F858629452DAD00255179 /* UI in Frameworks */ = {isa = PBXBuildFile; productRef = D35F858529452DAD00255179 /* UI */; };
+		D35F858829452DB500255179 /* MenuScene in Frameworks */ = {isa = PBXBuildFile; productRef = D35F858729452DB500255179 /* MenuScene */; };
+		D35F858A29452DBD00255179 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = D35F858929452DBD00255179 /* Network */; };
 		D36CEC3929451BD600CE26BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3829451BD600CE26BB /* AppDelegate.swift */; };
 		D36CEC3B29451BD600CE26BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3A29451BD600CE26BB /* SceneDelegate.swift */; };
 		D36CEC3D29451BD600CE26BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CEC3C29451BD600CE26BB /* ViewController.swift */; };
@@ -50,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35F858629452DAD00255179 /* UI in Frameworks */,
+				D35F858A29452DBD00255179 /* Network in Frameworks */,
+				D35F858829452DB500255179 /* MenuScene in Frameworks */,
 				48C61E88DBBB3455DB4A3D86 /* Pods_MacDonaldsMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +150,11 @@
 			dependencies = (
 			);
 			name = MacDonaldsMenu;
+			packageProductDependencies = (
+				D35F858529452DAD00255179 /* UI */,
+				D35F858729452DB500255179 /* MenuScene */,
+				D35F858929452DBD00255179 /* Network */,
+			);
 			productName = MacDonaldsMenu;
 			productReference = D36CEC3529451BD600CE26BB /* MacDonaldsMenu.app */;
 			productType = "com.apple.product-type.application";
@@ -570,6 +581,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D35F858529452DAD00255179 /* UI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UI;
+		};
+		D35F858729452DB500255179 /* MenuScene */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MenuScene;
+		};
+		D35F858929452DBD00255179 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D36CEC2D29451BD500CE26BB /* Project object */;
 }

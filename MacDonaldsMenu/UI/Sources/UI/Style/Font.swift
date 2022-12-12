@@ -14,6 +14,6 @@ extension UIFont {
     }
 
     public static func veryBig(weight: Weight = .regular) -> UIFont {
-        UIFont.systemFont(ofSize: 36, weight: weight)
+        UIFont.systemFont(ofSize: 28, weight: weight)
     }
 }

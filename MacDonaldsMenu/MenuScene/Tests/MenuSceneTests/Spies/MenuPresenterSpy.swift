@@ -21,5 +21,12 @@ final class MenuPresenterSpy: MenuPresenting {
         self.type = type
     }
 
+    private(set) var didPresentDetailsWithItemCallsCount = 0
+    private(set) var item: Item?
+    func presentDetailsWithItem(_ item: Item) {
+        didPresentDetailsWithItemCallsCount += 1
+        self.item = item
+    }
+
     var viewController: MenuDisplay?
 }

@@ -4,9 +4,10 @@ import XCTest
 final class MenuPresenterTests: XCTestCase {
     // MARK: - Variables
     private let viewController = MenuViewControllerSpy()
+    private let coordinator = MenuCoordinatorSpy()
 
     private lazy var presenter: MenuPresenter = {
-        let presenter = MenuPresenter()
+        let presenter = MenuPresenter(coordinator: coordinator)
         presenter.viewController = viewController
         return presenter
     }()
@@ -32,5 +33,12 @@ final class MenuPresenterTests: XCTestCase {
         XCTAssertEqual(viewController.didDisplayErrorCallsCount, 1)
         XCTAssertEqual(viewController.title, RequestErrorType.unexpected.title)
         XCTAssertEqual(viewController.message, RequestErrorType.unexpected.description)
+    }
+
+    // MARK: - presentError
+    func testPresentDetailsWithItem_ShouldCallShowDetailsWithItem() throws {
+        presenter.presentDetailsWithItem(MockConstants.item)
+        XCTAssertEqual(coordinator.didShowDetailsWithItemCallsCount, 1)
+        XCTAssertEqual(coordinator.item, MockConstants.item)
     }
 }

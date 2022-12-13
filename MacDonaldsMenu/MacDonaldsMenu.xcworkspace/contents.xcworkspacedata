@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MenuDetailsScene">
+   </FileRef>
+   <FileRef
       location = "group:MenuScene">
    </FileRef>
    <FileRef

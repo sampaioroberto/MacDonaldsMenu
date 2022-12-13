@@ -36,4 +36,14 @@ final class MenuInteractorTests: XCTestCase {
         XCTAssertEqual(self.presenter.didPresentErrorCallsCount, 1)
         XCTAssertEqual(self.presenter.type, .unexpected)
     }
+
+    func testDidTapOnItemAtIndexPath_ShouldCallPresentDetailsWithItem() {
+        service.menuResult = .success(MockConstants.menu)
+        interactor.fetchMenu()
+        let indexPath = IndexPath(item: 0, section: 0)
+        interactor.didTapOnItemAtIndexPath(indexPath)
+
+        XCTAssertEqual(self.presenter.didPresentDetailsWithItemCallsCount, 1)
+        XCTAssertEqual(self.presenter.item, MockConstants.menu.menus[indexPath.section].items[indexPath.item])
+    }
 }

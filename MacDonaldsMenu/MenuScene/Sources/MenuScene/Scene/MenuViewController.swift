@@ -13,6 +13,8 @@ extension MenuViewController.Layout {
     static let collectionViewInset = 20.0
     static let headerFractionalWidth = 1.0
     static let headerEstimatedHeight = 44.0
+    static let logoHeight = 100
+    static let lineHeight = 1
 }
 
 final class MenuViewController: ViewController<MenuInteracting> {
@@ -24,7 +26,7 @@ final class MenuViewController: ViewController<MenuInteracting> {
     typealias DataSource = UICollectionViewDiffableDataSource<String, Item>
     typealias Snapshot = NSDiffableDataSourceSnapshot<String, Item>
 
-    var screenWidth: CGFloat {
+    private var screenWidth: CGFloat {
         view.frame.width
     }
 
@@ -54,7 +56,23 @@ final class MenuViewController: ViewController<MenuInteracting> {
         return dataSource
     }()
 
-    private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+    private let logoImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = Images.logo
+        return imageView
+    }()
+
+    private let lineView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemGray
+        return view
+    }()
+
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+        collectionView.delegate = self
+        return collectionView
+    }()
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -69,12 +87,25 @@ final class MenuViewController: ViewController<MenuInteracting> {
 
     // MARK: - View Configuration
     override func buildViewHierarchy() {
+        view.addSubview(logoImageView)
+        view.addSubview(lineView)
         view.addSubview(collectionView)
     }
 
     override func setupConstraints() {
+        logoImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(Spacing.space02)
+            $0.centerX.equalToSuperview()
+            $0.width.height.equalTo(Layout.logoHeight)
+        }
+        lineView.snp.makeConstraints {
+            $0.top.equalTo(logoImageView.snp.bottom).offset(Spacing.space01)
+            $0.height.equalTo(Layout.lineHeight)
+            $0.trailing.leading.equalToSuperview()
+        }
         collectionView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(lineView.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
         }
     }
 
@@ -102,12 +133,21 @@ extension MenuViewController: MenuDisplay {
         activityIndicator.accessibilityIdentifier = String(describing: UIActivityIndicatorView.self)
         activityIndicator.startAnimating()
         collectionView.backgroundView = activityIndicator
+        activityIndicator.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
     }
 
     func displayError(title: String, message: String) {
         showErrorView(title: title, message: message) { [weak self] in
             self?.interactor.fetchMenu()
         }
+    }
+}
+
+extension MenuViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        interactor.didTapOnItemAtIndexPath(indexPath)
     }
 }
 

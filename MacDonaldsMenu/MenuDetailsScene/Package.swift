@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MenuDetailsScene",
-            targets: ["MenuDetailsScene"]),
+            targets: ["MenuDetailsScene"])
     ],
     dependencies: [
         .package(name: "UI", path: "UI")
@@ -27,6 +27,6 @@ let package = Package(
             ]),
         .testTarget(
             name: "MenuDetailsSceneTests",
-            dependencies: ["MenuDetailsScene"]),
+            dependencies: ["MenuDetailsScene"])
     ]
 )

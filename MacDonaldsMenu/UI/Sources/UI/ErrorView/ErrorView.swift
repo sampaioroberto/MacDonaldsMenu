@@ -60,7 +60,7 @@ public final class ErrorView: UIView {
         button.layer.cornerRadius = Layout.buttonCornerRadius
         button.layer.borderWidth = Layout.buttonBorderWidth
         button.backgroundColor = .systemGray
-        button.setTitle("Try again", for: .normal)
+        button.setTitle(ErrorViewText.tryAgain.localized, for: .normal)
         button.titleLabel?.font = .small()
         button.setTitleColor(.label, for: .normal)
         button.addTarget(self, action: #selector(tryAgain), for: .touchUpInside)

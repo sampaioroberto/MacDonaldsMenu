@@ -5,11 +5,13 @@ protocol DataTask {
 }
 
 protocol Session {
-    func customDataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTask
+    func customDataTask(with request: URLRequest,
+                        completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTask
 }
 
 extension URLSession: Session {
-    func customDataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTask {
+    func customDataTask(with request: URLRequest,
+                        completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTask {
         dataTask(with: request, completionHandler: completionHandler)
     }
 }

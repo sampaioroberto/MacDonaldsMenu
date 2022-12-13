@@ -6,6 +6,7 @@ import SnapKit
 extension ItemCollectionViewCell.Layout {
     static let numberOfLines = 2
     static let borderWidth: CGFloat = 1
+    static let cornerRadius: CGFloat = 4
 }
 
 enum ItemCollectionViewCellIdentifier {
@@ -76,6 +77,7 @@ extension ItemCollectionViewCell: ViewConfiguration {
     func configureViews() {
         contentView.layer.borderColor = UIColor.systemGray.cgColor
         contentView.layer.borderWidth = Layout.borderWidth
+        contentView.layer.cornerRadius = Layout.cornerRadius
     }
 }
 

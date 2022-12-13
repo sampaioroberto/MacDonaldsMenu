@@ -1,0 +1,5 @@
+// MARK: - RequestError
+"RequestError.Empty.title" = "Finding Nemo";
+"RequestError.Empty.description" = "There's no posts here yet";
+"RequestError.Unexpected.title" = "Oops...";
+"RequestError.Unexpected.description" = "Houston, we have a problem";

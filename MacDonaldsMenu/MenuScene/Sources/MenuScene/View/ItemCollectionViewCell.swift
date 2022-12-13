@@ -40,7 +40,7 @@ final class ItemCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Properties
 
-    private lazy var itemImageView: UIImageView = {
+    private let itemImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         return imageView

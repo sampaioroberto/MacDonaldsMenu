@@ -24,7 +24,7 @@ final class MenuViewController: ViewController<MenuInteracting> {
     typealias DataSource = UICollectionViewDiffableDataSource<String, Item>
     typealias Snapshot = NSDiffableDataSourceSnapshot<String, Item>
 
-    var screenWidth: CGFloat {
+    private var screenWidth: CGFloat {
         view.frame.width
     }
 
@@ -54,7 +54,11 @@ final class MenuViewController: ViewController<MenuInteracting> {
         return dataSource
     }()
 
-    private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
+        collectionView.delegate = self
+        return collectionView
+    }()
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -108,6 +112,12 @@ extension MenuViewController: MenuDisplay {
         showErrorView(title: title, message: message) { [weak self] in
             self?.interactor.fetchMenu()
         }
+    }
+}
+
+extension MenuViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        interactor.didTapOnItemAtIndexPath(indexPath)
     }
 }
 
